@@ -122,20 +122,20 @@
       background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
     }
 
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-.galeria img {
-  transition: transform 0.3s, box-shadow 0.3s;
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 imagens por linha */
+  gap: 12px;
+  padding: 0 16px; /* margem lateral */
+  box-sizing: border-box;
 }
 
-.galeria img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+.galeria img {
+  width: 100%;
+  height: 160px;        /* 🔑 tamanho ideal */
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
     footer {
       background-color: #000000;
