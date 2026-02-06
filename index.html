@@ -4,61 +4,45 @@
   <meta charset="UTF-8">
   <title>AP Concept Hair</title>
 
-  <!-- Fonte -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
-  :root {
-  --black-main: #0f0f0f;
-  --black-soft: #1a1a1a;
+    :root {
+      --black-main: #0f0f0f;
+      --black-soft: #1a1a1a;
 
-  --gold-light: #f5d88c;
-  --gold-main: #c9a24d;
-  --gold-dark: #8f6b1f;
-}
+      --gold-light: #f5d88c;
+      --gold-main: #c9a24d;
+      --gold-dark: #8f6b1f;
+    }
+
     body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--black-main);
-  color: #eaeaea;
-  text-align: center;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--black-main);
+      color: #eaeaea;
+      text-align: center;
     }
 
     header {
-     background: linear-gradient(135deg, #1e1e1e, #121212);
-      color: white;
+      background: linear-gradient(135deg, #1e1e1e, #121212);
       padding: 60px 20px;
     }
 
-    header h1 {
-      font-size: 30px;
-      font-weight: 500;
-      letter-spacing: 1px;
+    .logo {
+      max-width: 160px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 14px rgba(201, 162, 77, 0.45));
     }
-    section h2 {
-  background: linear-gradient(
-    90deg,
-    var(--gold-light),
-    var(--gold-main),
-    var(--gold-dark)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  font-size: 26px;
-  letter-spacing: 1.5px;
-  margin-bottom: 25px;
-}
-  .logo {
-  max-width: 160px;
-  margin-bottom: 20px;
-  filter: drop-shadow(0 0 14px rgba(201, 162, 77, 0.45));
-}
 
     header p {
       font-size: 18px;
-      margin-top: 10px;
       font-weight: 300;
+      color: #cccccc;
     }
 
     section {
@@ -68,9 +52,17 @@
     }
 
     section h2 {
-      color: #c2185b;
-      margin-bottom: 25px;
+      background: linear-gradient(
+        90deg,
+        var(--gold-light),
+        var(--gold-main),
+        var(--gold-dark)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-size: 26px;
+      letter-spacing: 1.5px;
+      margin-bottom: 25px;
     }
 
     section p {
@@ -88,19 +80,19 @@
       margin-top: 30px;
     }
 
-.card {
-  background-color: var(--black-soft);
-  padding: 22px;
-  border-radius: 18px;
-  font-size: 15px;
-  color: #f2f2f2;
-  border: 1px solid rgba(201, 162, 77, 0.25);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+    .card {
+      background-color: var(--black-soft);
+      padding: 22px;
+      border-radius: 18px;
+      font-size: 15px;
+      color: #f2f2f2;
+      border: 1px solid rgba(201, 162, 77, 0.25);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(201, 162, 77, 0.3);
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(201, 162, 77, 0.3);
     }
 
     .link {
@@ -115,12 +107,18 @@
       font-size: 16px;
     }
 
+    .link i {
+      margin-right: 8px;
+      font-size: 18px;
+    }
+
     .whatsapp {
       background-color: #25d366;
     }
-      .instagram {
-  background-color: #c2185b;
-}
+
+    .instagram {
+      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+    }
 
     .galeria {
       display: grid;
@@ -132,73 +130,69 @@
     .galeria img {
       width: 100%;
       border-radius: 14px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     }
 
-   footer {
-  background-color: #000000;
-  color: var(--gold-main);
-  padding: 25px;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-    .link i {
-  margin-right: 8px;
-  font-size: 18px;
-}
+    footer {
+      background-color: #000000;
+      color: var(--gold-main);
+      padding: 25px;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
   </style>
 </head>
 
 <body>
 
-  <header>
- <img src="IMG_0392.png" alt="AP Concept Hair" class="logo">
-<p>Beleza, cuidado e autoestima</p>
-  </header>
+<header>
+  <img src="IMG_0392.png" alt="AP Concept Hair" class="logo">
+  <p>Beleza, cuidado e autoestima</p>
+</header>
 
-  <section>
-    <h2>Sobre nós</h2>
-    <p>
-      Um espaço pensado para realçar sua beleza com carinho, técnica e profissionalismo.
-    </p>
-  </section>
+<section>
+  <h2>Sobre nós</h2>
+  <p>
+    Um espaço pensado para realçar sua beleza com carinho, técnica e profissionalismo.
+  </p>
+</section>
 
-  <section>
-    <h2>Serviços</h2>
+<section>
+  <h2>Serviços</h2>
 
-    <div class="servicos">
-      <div class="card">Corte feminino</div>
-      <div class="card">Escova</div>
-      <div class="card">Hidratação</div>
-      <div class="card">Coloração</div>
-      <div class="card">Progressiva</div>
-      <div class="card">Tratamentos capilares</div>
-      <div class="card">Manicure e Pedicure</div>
-      <div class="card">Designer de Sobrancelhas</div>
-    </div>
+  <div class="servicos">
+    <div class="card">Corte feminino</div>
+    <div class="card">Escova</div>
+    <div class="card">Hidratação</div>
+    <div class="card">Coloração</div>
+    <div class="card">Progressiva</div>
+    <div class="card">Tratamentos capilares</div>
+    <div class="card">Manicure e Pedicure</div>
+    <div class="card">Designer de Sobrancelhas</div>
+  </div>
 
-   <a class="link whatsapp" href="https://wa.me/5567999697180">
-  <i class="fa-brands fa-whatsapp"></i> Agende pelo WhatsApp
-</a>
+  <a class="link whatsapp" href="https://wa.me/5567999697180">
+    <i class="fa-brands fa-whatsapp"></i> Agende pelo WhatsApp
+  </a>
 
- <a class="link instagram" href="https://instagram.com/apconcepthair" target="_blank">
-  <i class="fa-brands fa-instagram"></i> Siga no Instagram
-</a>
-  </section>
+  <a class="link instagram" href="https://instagram.com/apconcepthair" target="_blank">
+    <i class="fa-brands fa-instagram"></i> Siga no Instagram
+  </a>
+</section>
 
-  <section>
-    <h2>Galeria</h2>
+<section>
+  <h2>Galeria</h2>
 
-    <div class="galeria">
-      <img src="IMG_0386.jpeg" alt="Trabalho realizado">
-      <img src="IMG_0385.jpeg" alt="Resultado do cabelo">
-      <img src="IMG_0384.jpeg" alt="AP Concept Hair">
-    </div>
-  </section>
+  <div class="galeria">
+    <img src="IMG_0386.jpeg">
+    <img src="IMG_0385.jpeg">
+    <img src="IMG_0384.jpeg">
+  </div>
+</section>
 
-  <footer>
-    © 2026 AP Concept Hair — Todos os direitos reservados
-  </footer>
+<footer>
+  © 2026 AP Concept Hair — Todos os direitos reservados
+</footer>
 
 </body>
 </html>
