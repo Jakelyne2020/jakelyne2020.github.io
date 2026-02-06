@@ -1,53 +1,121 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>AP Concept Hair</title>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>AP Concept Hair</title>
 
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #fff0f5;
-        padding-top: 50px;
-      }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdf1f6;
+      color: #333;
+    }
 
-      h1 {
-        color: #c2185b;
-      }
+    header {
+      background: linear-gradient(135deg, #c2185b, #e91e63);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
 
-      p {
-        font-size: 16px;
-        color: #555;
-        max-width: 320px;
-        margin: 20px auto;
-      }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
 
-      button {
-        background-color: #e91e63;
-        color: white;
-        border: none;
-        padding: 14px 24px;
-        font-size: 16px;
-        border-radius: 30px;
-        cursor: pointer;
-      }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
 
-      button:hover {
-        background-color: #c2185b;
-      }
-    </style>
-  </head>
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-  <body>
-    <h1>AP Concept Hair</h1>
+    section h2 {
+      color: #c2185b;
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-    <p>
-      Realçamos sua beleza com carinho e profissionalismo.
-      Corte, escova, hidratação e muito mais.
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
+
+    .whatsapp {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #c2185b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>AP Concept Hair ✂️</h1>
+    <p>Beleza, cuidado e autoestima</p>
+  </header>
+
+  <section>
+    <h2>Sobre nós</h2>
+    <p style="text-align:center;">
+      Um espaço pensado para realçar sua beleza com carinho, técnica e profissionalismo.
     </p>
+  </section>
 
-    <a href="https://wa.me/5567999697180">
-      <button>Agendar horário no WhatsApp</button>
+  <section>
+    <h2>Serviços</h2>
+
+    <div class="servicos">
+      <div class="card">Corte feminino</div>
+      <div class="card">Escova</div>
+      <div class="card">Hidratação</div>
+      <div class="card">Coloração</div>
+      <div class="card">Progressiva</div>
+      <div class="card">Tratamentos capilares</div>
+    </div>
+
+    <a class="whatsapp" href="https://wa.me/5567999697180”>
+      Agendar pelo WhatsApp
     </a>
-  </body>
+  </section>
+
+  <footer>
+    © 2026 AP Concept Hair — Todos os direitos reservados
+  </footer>
+
+</body>
 </html>
