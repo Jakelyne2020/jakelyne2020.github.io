@@ -8,12 +8,20 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
+  :root {
+  --black-main: #0f0f0f;
+  --black-soft: #1a1a1a;
+
+  --gold-light: #f5d88c;
+  --gold-main: #c9a24d;
+  --gold-dark: #8f6b1f;
+}
     body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #121212;
-      color: #eaeaea;
-      text-align: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--black-main);
+  color: #eaeaea;
+  text-align: center;
     }
 
     header {
@@ -27,10 +35,24 @@
       font-weight: 500;
       letter-spacing: 1px;
     }
-    .logo {
+    section h2 {
+  background: linear-gradient(
+    90deg,
+    var(--gold-light),
+    var(--gold-main),
+    var(--gold-dark)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 26px;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+}
+  .logo {
   max-width: 160px;
   margin-bottom: 20px;
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 0 14px rgba(201, 162, 77, 0.45));
 }
 
     header p {
@@ -66,18 +88,19 @@
       margin-top: 30px;
     }
 
-    .card {
-      background-color: #1e1e1e;
-      color: #eaeaea;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-      font-size: 15px;
-      transition: transform 0.3s;
-    }
+.card {
+  background-color: var(--black-soft);
+  padding: 22px;
+  border-radius: 18px;
+  font-size: 15px;
+  color: #f2f2f2;
+  border: 1px solid rgba(201, 162, 77, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    .card:hover {
-      transform: scale(1.05);
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(201, 162, 77, 0.3);
     }
 
     .link {
@@ -112,13 +135,13 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
-    footer {
-      background-color: #1e1e1e;
-      color: #999;
-      padding: 20px;
-      font-size: 14px;
-      margin-top: 40px;
-    }
+   footer {
+  background-color: #000000;
+  color: var(--gold-main);
+  padding: 25px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
     .link i {
   margin-right: 8px;
   font-size: 18px;
