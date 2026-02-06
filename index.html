@@ -41,7 +41,7 @@
 
     header p {
       font-size: 19px;
-      letter:spacing: 0.5px;
+      letter-spacing: 0.5px;
       font-weight: 300;
       color: #cccccc;
     }
@@ -121,23 +121,20 @@
     .instagram {
       background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
     }
-
 .galeria {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 14px;
   padding: 0 16px;
 }
-
 .galeria img {
   width: 100%;
-  height: auto;              /* 🔑 deixa a imagem inteira */
-  aspect-ratio: 1 / 1;       /* quadrado estilo Instagram */
-  object-fit: contain;       /* NÃO corta */
-  background-color: #0f0f0f; /* fundo preto elegante */
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background-color: #0f0f0f;
   border-radius: 14px;
-  padding: 6px;              /* respiro premium */
-  box-shadow: 0 4px 14px rgba(201, 162, 77, 0.25);
+  padding: 8px; /* aumente para 10px se quiser mais respiro */
+  box-shadow: 0 6px 18px rgba(201, 162, 77, 0.22);
 }
 .galeria img {
   transition: transform 0.3s ease;
