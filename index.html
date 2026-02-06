@@ -4,31 +4,34 @@
   <meta charset="UTF-8">
   <title>AP Concept Hair</title>
 
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #fff0f5;
-      padding: 0;
-      test-align: center
+      background-color: #fff5f8;
       color: #333;
+      text-align: center;
     }
 
     header {
-      background: linear-gradient(135deg, #c2185b, #e91e63);
+      background: linear-gradient(135deg, #c2185b, #f06292);
       color: white;
-      text-align: center;
-      padding: 50px 20px;
+      padding: 60px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 34px;
+      font-weight: 600;
     }
 
     header p {
       font-size: 18px;
       margin-top: 10px;
+      font-weight: 300;
     }
 
     section {
@@ -39,90 +42,77 @@
 
     section h2 {
       color: #c2185b;
-      margin-bottom: 20px;
-      text-align: center;
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+
+    section p {
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: auto;
     }
 
     .servicos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
     }
 
     .card {
       background-color: white;
       padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: 0.3;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      font-size: 15px;
+      transition: transform 0.3s;
     }
 
     .card:hover {
-      transform: scale(1.03);
-      transition: 0.3s;
+      transform: scale(1.05);
+    }
+
+    .link {
+      display: block;
+      max-width: 320px;
+      margin: 15px auto;
+      padding: 16px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
     }
 
     .whatsapp {
-      display: block;
-      width: fit-content;
-      margin: 30px auto;
       background-color: #25d366;
-      color: white;
-      padding: 15px 30px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
+    }
+
+    .instagram {
+      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
     footer {
       background-color: #c2185b;
       color: white;
-      text-align: center;
       padding: 20px;
       font-size: 14px;
+      margin-top: 40px;
     }
-    .whatsapp-fixo {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 30px;
-  line-height: 60px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  z-index: 1000;
-}
-       /* GALERIA */
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .galeria img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-    }
-    .instagram {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 14px 25px;
-  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  text-align: center
-}
   </style>
 </head>
 
@@ -135,7 +125,7 @@
 
   <section>
     <h2>Sobre nós</h2>
-    <p style="text-align:center;">
+    <p>
       Um espaço pensado para realçar sua beleza com carinho, técnica e profissionalismo.
     </p>
   </section>
@@ -154,20 +144,18 @@
       <div class="card">Designer de Sobrancelhas</div>
     </div>
 
-   <a class="whatsapp" href="https://wa.me/5567999697180">
-  📞 Agende seu horário pelo WhatsApp
-</a>
-<a class="instagram"
-   href="https://instagram.com/apconcepthair"
-   target="_blank">
-   📸 Siga no Instagram
-</a>
+    <a class="link whatsapp" href="https://wa.me/5567999697180">
+      📞 Agende pelo WhatsApp
+    </a>
+
+    <a class="link instagram" href="https://instagram.com/apconcepthair" target="_blank">
+      📸 Siga no Instagram
+    </a>
   </section>
-  
+
   <section>
     <h2>Galeria</h2>
 
-    <!-- TROQUE os nomes se forem diferentes -->
     <div class="galeria">
       <img src="IMG_0386.jpeg" alt="Trabalho realizado">
       <img src="IMG_0385.jpeg" alt="Resultado do cabelo">
