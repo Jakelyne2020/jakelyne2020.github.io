@@ -19,26 +19,23 @@
       --gold-main: #c9a24d;
       --gold-dark: #8f6b1f;
     }
-
-    body {
+body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--black-main);
+  background: radial-gradient(circle at top, #1a1a1a 0%, #0f0f0f 60%);
   color: #eaeaea;
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }
     header {
-      background: linear-gradient(135deg, #1e1e1e, #121212);
-      padding: 60px 20px;
-    }
-
-    .logo {
-      max-width: 160px;
-      margin-bottom: 20px;
-      filter: drop-shadow(0 0 14px rgba(201, 162, 77, 0.45));
-    } 
-
+  background: linear-gradient(160deg, #1c1c1c, #0d0d0d);
+  padding: 90px 20px;
+}
+  .logo {
+  max-width: 180px;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 0 18px rgba(201, 162, 77, 0.5));
+}
     header p {
   font-size: 16px;
   letter-spacing: 1.6px;
@@ -51,6 +48,7 @@
       padding: 60px 20px;
       max-width: 900px;
       margin: auto;
+  border-bottom: 1px solid rgba(201, 162, 77, 0.08);
     }
     section h2 {
   background: linear-gradient(
@@ -93,14 +91,15 @@
 
     .card {
   text-transform: uppercase;
-  background-color: var(--black-soft);
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(6px);
   padding: 24px;
-  border-radius: 20px;
+  border-radius: 22px;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.8px;
   color: #f2f2f2;
-  border: 1px solid rgba(201, 162, 77, 0.3);
+  border: 1px solid rgba(201, 162, 77, 0.4);
   transition: all 0.3s ease;
 }
       .card:hover {
@@ -154,7 +153,7 @@
 .galeria img {
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: contain;
+  object-fit: cover;
   background-color: #0f0f0f;
   border-radius: 14px;
   padding: 8px; /* aumente para 10px se quiser mais respiro */
@@ -165,7 +164,7 @@
 }
 
 .galeria img:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
     footer {
       background-color: #000000;
