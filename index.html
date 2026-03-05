@@ -28,6 +28,7 @@ body {
   color: #eaeaea;
   text-align: center;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
     header {
   position: relative;
@@ -318,16 +319,31 @@ border-radius:50%;
 font-size:20px;
 text-decoration:none;
 }
+section{
+animation: fadeUp 1s ease;
+}
 
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
   </style>
 </head>
 
 <body>
+  
   <nav class="menu">
+
 <a href="#sobre">Sobre</a>
 <a href="#servicos">Serviços</a>
 <a href="#galeria">Galeria</a>
 <a href="#contato">Contato</a>
+
 </nav>
 
 <header>
@@ -348,9 +364,8 @@ Agendar horário
 </a>
 
 </header>
-
-<section id="sobre">  
-  <h2>Sobre nós</h2>
+<section id="sobre">
+<h2>Sobre nós</h2>
 <p>
 O AP Concept Hair é um espaço criado para quem busca mais do que um serviço de beleza — aqui, cada atendimento é pensado com cuidado, atenção e respeito à sua individualidade.
 <br><br>
@@ -491,5 +506,42 @@ elementos.forEach(el => {
 <i class="fa-brands fa-whatsapp"></i>
 </a>
   <a href="#" class="topo">⬆</a>
+    <script>
+
+const imagens = document.querySelectorAll(".galeria img");
+
+imagens.forEach(img => {
+img.addEventListener("click", () => {
+
+const overlay = document.createElement("div");
+
+overlay.style.position = "fixed";
+overlay.style.top = "0";
+overlay.style.left = "0";
+overlay.style.width = "100%";
+overlay.style.height = "100%";
+overlay.style.background = "rgba(0,0,0,0.9)";
+overlay.style.display = "flex";
+overlay.style.alignItems = "center";
+overlay.style.justifyContent = "center";
+
+const imgGrande = document.createElement("img");
+
+imgGrande.src = img.src;
+imgGrande.style.maxWidth = "90%";
+imgGrande.style.maxHeight = "90%";
+
+overlay.appendChild(imgGrande);
+
+overlay.addEventListener("click", () => {
+overlay.remove();
+});
+
+document.body.appendChild(overlay);
+
+});
+});
+
+</script>
 </body>
 </html>
