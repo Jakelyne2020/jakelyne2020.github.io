@@ -246,6 +246,18 @@ header::after {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(201, 162, 77, 0.4);
 }
+    .whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #25d366;
+color: white;
+font-size: 26px;
+padding: 16px;
+border-radius: 50%;
+box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+z-index: 999;
+}
   </style>
 
 </head>
@@ -334,13 +346,16 @@ Acreditamos que a beleza está diretamente ligada à autoestima e ao bem-estar. 
     <a class="link maps"
    href="https://www.google.com/maps/search/?api=1&query=Rua+Clemente+Pereira+250+Campo+Grande+MS"
    target="_blank">
-  <i class="fa-solid fa-map-location-dot"></i> Ver no Google Maps
+  <i class="fa-solid fa-map-location-dot"></i> Ver no Google Maps    
 </a>
+    
   </div>
 </section>
+  
 <footer>
   © 2026 AP Concept Hair — Todos os direitos reservados
 </footer>
+  
     <script>
 const elementos = document.querySelectorAll("section, .card, .galeria img");
 
@@ -359,5 +374,10 @@ elementos.forEach(el => {
   observer.observe(el);
 });
 </script>
+  
+  <a href="https://wa.me/5567999697180" class="whatsapp-float">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+  
 </body>
 </html>
